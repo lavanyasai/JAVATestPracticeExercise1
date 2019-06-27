@@ -1,3 +1,5 @@
+package com.stackroute.pe1;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -9,19 +11,14 @@ Accepts the numbers as input from user and perform the following:
  */
 
 public class SortNumbers {
-    public static void main(String args[]) {
-        Scanner scanner = new Scanner(System.in);
-        String inputString = scanner.next();
+
+    public static String sortNumbersAndAddEvenNumber(String inputString) {
+        int sumOfNumbers = 0;
         char[] inputStringArray = inputString.toCharArray();
         Arrays.sort(inputStringArray);
         String order = new String(inputStringArray);
         StringBuilder stringBuilder = new StringBuilder(order);
         order = stringBuilder.reverse().toString();
-        sortNumbersAndAddEvenNumber(order);
-    }
-
-    private static void sortNumbersAndAddEvenNumber(String order) {
-        int sumOfNumbers = 0;
         System.out.println("Sorted number in non-increasing order : " + order);
         for(int i=0; i<order.length(); i++) {
             if((Character.getNumericValue(order.charAt(i))%2) == 0) {
@@ -30,11 +27,10 @@ public class SortNumbers {
         }
         System.out.println("Sum of even numbers : " + sumOfNumbers);
         if(sumOfNumbers > 15) {
-            System.out.println("True");
+            return "True";
         }
         else {
-            System.out.println("False");
+            return "False";
         }
-
     }
 }
