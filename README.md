@@ -79,7 +79,6 @@ repeat n number of times in the output String.
 Input1: Stackroute
 Input2: 5
 Output1: Stackrouterouterouterouterouteroute
-
 Input1: Stackroute
 Input2: 2
 Output1: Stackroutetete
