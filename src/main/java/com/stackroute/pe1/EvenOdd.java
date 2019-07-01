@@ -9,14 +9,16 @@ To determine whether the input specified is even or odd.
 public class EvenOdd {
 
     public static String checkWhetherNumberIsEvenOrOdd(int inputNumber) {
+        String result = "";
         if(((inputNumber%2)==0) && (inputNumber >= 20 && inputNumber <=30)) {
-            return "Jerry";
+            result = "Jerry";
         }
         else if(((inputNumber%2)!=0) && (inputNumber >= 20 && inputNumber <=30)){
-            return "Tom";
+            result = "Tom";
         }
         else {
-            return "Input is incorrect";
+            result = "Input is incorrect";
         }
+        return result;
     }
 }

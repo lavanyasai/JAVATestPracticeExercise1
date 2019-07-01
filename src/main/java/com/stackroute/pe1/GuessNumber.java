@@ -8,6 +8,7 @@ To determine whether the guessed number matches with the original number or not.
 
 public class GuessNumber {
     public static String checkWhetherTheNumberGuessedIsCorrectOrNot(int[] inputNumber) {
+        String result = "";
         int originalNumber = 30;
         int i=0;
         while(true) {
@@ -15,13 +16,16 @@ public class GuessNumber {
                 if (originalNumber > inputNumber[i]) {
                 } else if (originalNumber < inputNumber[i]) {
                 } else {
-                    return "Number guessed matches the original number";
+                    result = "Number guessed matches the original number";
+                    break;
                 }
                 i++;
             }
             else {
-                return "Number guessed is not correct";
+                result = "Number guessed is not correct";
+                break;
             }
         }
+        return result;
     }
 }

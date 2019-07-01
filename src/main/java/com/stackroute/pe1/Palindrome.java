@@ -10,6 +10,7 @@ public class Palindrome {
 
     public static String checkWhetherStringIsPalindromeOrNot(String inputString) {
         int sum = 0;
+        String result = "";
         try {
             Integer.parseInt(inputString);
             StringBuilder stringBuilder = new StringBuilder(inputString);
@@ -21,16 +22,17 @@ public class Palindrome {
                     }
                 }
                 if (sum > 25) {
-                    return "String is palindrome and sum of even numbers is greater than 25";
+                    result = "String is palindrome and sum of even numbers is greater than 25";
                 } else {
-                    return "String is palindrome and sum of even numbers is less than 25";
+                    result = "String is palindrome and sum of even numbers is less than 25";
                 }
             } else {
-                return "String is not palindrome";
+                result = "String is not palindrome";
             }
         }
         catch(NumberFormatException exception) {
-            return "Input is not valid";
+            result = "Input is not valid";
         }
+        return result;
     }
 }
