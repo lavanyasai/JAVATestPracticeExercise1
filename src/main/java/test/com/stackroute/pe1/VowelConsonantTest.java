@@ -19,21 +19,21 @@ public class VowelConsonantTest {
     }
 
     @Test
-    public void checkWhetherTheCharacterIsVowel() {
+    public void givenStringReturnsVowel() {
         actualResult = vowelConsonant.checkWhetherCharacterIsConsonantOrVowel("AE");
         expectedResult = "Vowel Vowel ";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheCharacterIsConsonant() {
+    public void givenStringReturnsConsonant() {
         actualResult = vowelConsonant.checkWhetherCharacterIsConsonantOrVowel("cd");
         expectedResult = "Consonant Consonant ";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheCharacterIsVowelOrConsonant() {
+    public void givenStringReturnsCharacterIsVowelOrConsonant() {
         actualResult = vowelConsonant.checkWhetherCharacterIsConsonantOrVowel("ag@ir");
         expectedResult = "Vowel Consonant Input is not a letter Vowel Consonant ";
         assertEquals(expectedResult, actualResult);

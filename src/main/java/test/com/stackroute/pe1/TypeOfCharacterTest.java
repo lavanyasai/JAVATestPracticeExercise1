@@ -19,14 +19,14 @@ public class TypeOfCharacterTest {
     }
 
     @Test
-    public void checkTheCapitalInputCharacter() {
+    public void givenCapitalCharacterReturnCapitalLetter() {
         actualResult = typeOfCharacter.determineTheTypeOfCharacter('Z');
         expectedResult = "Capital Letter";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkTheSymbolInputCharacter() {
+    public void givenSpecialCharacterReturnSpecialSymbol() {
         actualResult = typeOfCharacter.determineTheTypeOfCharacter('@');
         expectedResult = "Special Symbol";
         assertEquals(expectedResult, actualResult);

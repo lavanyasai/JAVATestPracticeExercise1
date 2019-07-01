@@ -19,14 +19,14 @@ public class SortDigitsOfANumberTest {
     }
 
     @Test
-    public void checkWhetherSumIsLess() {
+    public void givenNumberReturnsIfSumOfTheEvenDigitsIsLessThanFifteen() {
         expectedResult = sortDigitsOfANumber.sortDigitsAndAddEvenDigits("12343");
         actualResult = "False";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherSumIsGreater() {
+    public void givenNumberReturnsIfSumOfTheEvenDigitsIsGreaterThanFifteen() {
         expectedResult = sortDigitsOfANumber.sortDigitsAndAddEvenDigits("24442");
         actualResult = "True";
         assertEquals(expectedResult, actualResult);

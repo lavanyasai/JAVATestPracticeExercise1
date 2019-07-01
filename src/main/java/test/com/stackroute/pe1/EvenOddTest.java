@@ -19,21 +19,21 @@ public class EvenOddTest {
     }
 
     @Test
-    public void checkWhetherItIsEven() {
+    public void givenEvenNumberReturnsJerry() {
         actualResult = evenOdd.checkWhetherNumberIsEvenOrOdd(20);
         expectedResult = "Jerry";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherItIsOdd() {
+    public void givenOddNumbersReturnsOdd() {
         actualResult = evenOdd.checkWhetherNumberIsEvenOrOdd(23);
         expectedResult = "Tom";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkForOtherCharacters() {
+    public void givenOtherCharactersReturnsInputIsIncorrect() {
         actualResult = evenOdd.checkWhetherNumberIsEvenOrOdd('@');
         expectedResult = "Input is incorrect";
         assertEquals(expectedResult, actualResult);

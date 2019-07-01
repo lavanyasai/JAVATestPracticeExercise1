@@ -19,28 +19,28 @@ public class PalindromeTest {
     }
 
     @Test
-    public void checkWhetherTheSumIsLess() {
+    public void givenStringReturnsStringIsPalindromeAndSumIsGreaterThan25() {
         actualResult = palindrome.checkWhetherStringIsPalindromeOrNot("2468642");
         expectedResult = "String is palindrome and sum of even numbers is greater than 25";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheSumIsGreater() {
+    public void givenStringReturnsStringIsPalindromeAndSumIsLessThan25() {
         actualResult = palindrome.checkWhetherStringIsPalindromeOrNot("123454321");
         expectedResult = "String is palindrome and sum of even numbers is less than 25";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheStringIsPalindrome() {
+    public void givenStringReturnsStringIsNotPalindrome() {
         actualResult = palindrome.checkWhetherStringIsPalindromeOrNot("1234");
         expectedResult = "String is not palindrome";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheInputIsNumberOrNot() {
+    public void givenStringReturnsInputIsNotValid() {
         actualResult = palindrome.checkWhetherStringIsPalindromeOrNot("aba");
         expectedResult = "Input is not valid";
         assertEquals(expectedResult, actualResult);

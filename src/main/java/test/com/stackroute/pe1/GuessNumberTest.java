@@ -19,9 +19,16 @@ public class GuessNumberTest {
     }
 
     @Test
-    public void checkWhetherTheNumberIsCorrect() {
+    public void givenNumbersReturnsNumberGuessedMatchesTheOriginalNumber() {
         actualResult = guessNumber.checkWhetherTheNumberGuessedIsCorrectOrNot(new int[]{10, 20, 30});
         expectedResult = "Number guessed matches the original number";
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void givenNumbersReturnsNumberGuessedIsNotCorrect() {
+        actualResult = guessNumber.checkWhetherTheNumberGuessedIsCorrectOrNot(new int[]{10, 20});
+        expectedResult = "Number guessed is not correct";
         assertEquals(expectedResult, actualResult);
     }
 

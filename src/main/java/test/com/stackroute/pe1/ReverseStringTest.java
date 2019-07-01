@@ -19,14 +19,14 @@ public class ReverseStringTest {
     }
 
     @Test
-    public void checkWhetherTheReverseOfAStringIsCorrect() {
+    public void givenStringlondonReturnsReversedStringnodnol() {
         expectedResult = reverseString.reverseString("london");
         actualResult = "nodnol";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherTheReturnedReverseOfAStringIsCorrect() {
+    public void givenStringstackReturnsReversedStringkcats() {
         expectedResult = reverseString.reverseString("stack");
         actualResult = "kcats";
         assertEquals(expectedResult, actualResult);

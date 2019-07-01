@@ -19,14 +19,14 @@ public class RepeatWordsTest {
     }
 
     @Test
-    public void checkWhetherWordIsRepeated() {
+    public void givenStringReturnsFiveTimesRepeatedString() {
         actualResult = repeatWords.repeatSpecifiedWords("Stackroute", 5);
         expectedResult = "Stackrouterouterouterouterouteroute";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherResultWordIsRepeated() {
+    public void givenStringReturnsTwoTimesRepeatedString() {
         actualResult = repeatWords.repeatSpecifiedWords("Stackroute", 2);
         expectedResult = "Stackroutetete";
         assertEquals(expectedResult, actualResult);

@@ -19,7 +19,7 @@ public class ScannerIntegersTest {
     }
 
     @Test
-    public void checkWhetherNumbersAreScannedAndAdded() {
+    public void givenNumbersReturnsSumOfTheNumbers() {
         expectedResult = scannerIntegers.readIntegersAndAddThem(new int[]{10, 20, 30, 0});
         actualResult = 60;
         assertEquals(expectedResult, actualResult);

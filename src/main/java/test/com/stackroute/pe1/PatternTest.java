@@ -19,16 +19,23 @@ public class PatternTest {
     }
 
     @Test
-    public void checkWhetherThePatternIsCorrectOrNot() {
+    public void givenInputFiveReturnsFiveLinesOfPattern() {
         actualResult = pattern.printPattern(5);
         expectedResult = "122333444455555";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void checkWhetherThePatternReturnedIsCorrectOrNot() {
+    public void givenInputOneReturnsOneLineOfPattern() {
         actualResult = pattern.printPattern(1);
         expectedResult = "1";
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void givenInputZeroReturnsNothing() {
+        actualResult = pattern.printPattern(0);
+        expectedResult = "";
         assertEquals(expectedResult, actualResult);
     }
 
