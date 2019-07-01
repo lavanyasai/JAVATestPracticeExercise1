@@ -1,10 +1,11 @@
 package test.com.stackroute.pe1;
 
 import com.stackroute.pe1.GuessNumber;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
-import static org.junit.Assert.*;
 
 public class GuessNumberTest {
 
@@ -12,7 +13,7 @@ public class GuessNumberTest {
     String actualResult;
     String expectedResult;
 
-    @org.junit.Before
+    @Before
     public void setUp() throws Exception {
         guessNumber = new GuessNumber();
     }
@@ -24,7 +25,7 @@ public class GuessNumberTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @org.junit.After
+    @After
     public void tearDown() throws Exception {
         guessNumber = null;
     }

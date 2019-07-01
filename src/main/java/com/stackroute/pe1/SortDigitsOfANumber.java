@@ -10,9 +10,9 @@ Accepts the numbers as input from user and perform the following:
 3. If sum is greater than 15, prints true else prints false
  */
 
-public class SortNumbers {
+public class SortDigitsOfANumber {
 
-    public static String sortNumbersAndAddEvenNumber(String inputString) {
+    public static String sortDigitsAndAddEvenDigits(String inputString) {
         int sumOfNumbers = 0;
         char[] inputStringArray = inputString.toCharArray();
         Arrays.sort(inputStringArray);

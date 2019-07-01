@@ -1,6 +1,8 @@
 package test.com.stackroute.pe1;
 
 import com.stackroute.pe1.RepeatWords;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,7 +12,8 @@ public class RepeatWordsTest {
     RepeatWords repeatWords;
     String expectedResult;
     String actualResult;
-    @org.junit.Before
+
+    @Before
     public void setUp() throws Exception {
         repeatWords = new RepeatWords();
     }
@@ -29,7 +32,7 @@ public class RepeatWordsTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @org.junit.After
+    @After
     public void tearDown() throws Exception {
         repeatWords = null;
     }

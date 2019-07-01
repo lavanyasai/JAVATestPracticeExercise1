@@ -1,6 +1,8 @@
 package test.com.stackroute.pe1;
 
 import com.stackroute.pe1.EvenOdd;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -11,7 +13,7 @@ public class EvenOddTest {
     String actualResult;
     String expectedResult;
 
-    @org.junit.Before
+    @Before
     public void setUp() throws Exception {
         evenOdd = new EvenOdd();
     }
@@ -37,7 +39,7 @@ public class EvenOddTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @org.junit.After
+    @After
     public void tearDown() throws Exception {
         evenOdd = null;
     }

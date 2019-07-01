@@ -1,37 +1,39 @@
 package test.com.stackroute.pe1;
 
-import com.stackroute.pe1.SortNumbers;
+import com.stackroute.pe1.SortDigitsOfANumber;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class SortNumbersTest {
+public class SortDigitsOfANumberTest {
 
-    SortNumbers sortNumbers;
+    SortDigitsOfANumber sortDigitsOfANumber;
     String expectedResult;
     String actualResult;
 
-    @org.junit.Before
+    @Before
     public void setUp() throws Exception {
-        sortNumbers = new SortNumbers();
+        sortDigitsOfANumber = new SortDigitsOfANumber();
     }
 
     @Test
     public void checkWhetherSumIsLess() {
-        expectedResult = sortNumbers.sortNumbersAndAddEvenNumber("12343");
+        expectedResult = sortDigitsOfANumber.sortDigitsAndAddEvenDigits("12343");
         actualResult = "False";
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
     public void checkWhetherSumIsGreater() {
-        expectedResult = sortNumbers.sortNumbersAndAddEvenNumber("24442");
+        expectedResult = sortDigitsOfANumber.sortDigitsAndAddEvenDigits("24442");
         actualResult = "True";
         assertEquals(expectedResult, actualResult);
     }
 
-    @org.junit.After
+    @After
     public void tearDown() throws Exception {
-        sortNumbers = null;
+        sortDigitsOfANumber = null;
     }
 }

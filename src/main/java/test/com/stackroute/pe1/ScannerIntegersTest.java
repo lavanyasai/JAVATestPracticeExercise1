@@ -1,6 +1,8 @@
 package test.com.stackroute.pe1;
 
 import com.stackroute.pe1.ScannerIntegers;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,7 +13,7 @@ public class ScannerIntegersTest {
     int expectedResult;
     int actualResult;
 
-    @org.junit.Before
+    @Before
     public void setUp() throws Exception {
         scannerIntegers = new ScannerIntegers();
     }
@@ -23,7 +25,7 @@ public class ScannerIntegersTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @org.junit.After
+    @After
     public void tearDown() throws Exception {
         scannerIntegers = null;
     }

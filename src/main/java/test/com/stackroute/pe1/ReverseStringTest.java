@@ -1,6 +1,8 @@
 package test.com.stackroute.pe1;
 
 import com.stackroute.pe1.ReverseString;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -11,7 +13,7 @@ public class ReverseStringTest {
     String expectedResult;
     String actualResult;
 
-    @org.junit.Before
+    @Before
     public void setUp() throws Exception {
         reverseString = new ReverseString();
     }
@@ -30,7 +32,7 @@ public class ReverseStringTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @org.junit.After
+    @After
     public void tearDown() throws Exception {
         reverseString = null;
     }

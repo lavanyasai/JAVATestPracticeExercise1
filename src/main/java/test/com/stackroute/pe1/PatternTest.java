@@ -1,6 +1,8 @@
 package test.com.stackroute.pe1;
 
 import com.stackroute.pe1.Pattern;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -10,7 +12,8 @@ public class PatternTest {
     Pattern pattern;
     String actualResult;
     String expectedResult;
-    @org.junit.Before
+
+    @Before
     public void setUp() throws Exception {
         pattern = new Pattern();
     }
@@ -29,7 +32,7 @@ public class PatternTest {
         assertEquals(expectedResult, actualResult);
     }
 
-    @org.junit.After
+    @After
     public void tearDown() throws Exception {
         pattern = null;
     }
