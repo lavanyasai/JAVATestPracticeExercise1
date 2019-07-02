@@ -1,4 +1,4 @@
-package test.com.stackroute.pe1;
+package com.stackroute.pe1;
 
 import com.stackroute.pe1.RepeatWords;
 import org.junit.After;
